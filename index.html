@@ -161,6 +161,169 @@
   </script>
 
   <div class="container">
+    <h1>Happy birthday, Jazz!!</h1>
+
+    <div class="message-box">
+      I hope today wraps you in the kind of warmth you deserve. <br>
+      the kind that makes you feel appreciated, seen, and genuinely happy.<br>
+    </div>
+
+    <a class="song-link" href="https://youtu.be/Hcuj8Hiis1U?si=ulFGYCcFVyqMVBQR" target="_blank">
+      💗 click this to see how beautiful you are 💗
+    </a>
+<div class="popup-btn" onclick="showPopup('secretPopup')">
+  🙈 secret button 🙈
+</div>
+</div>
+<!-- SECRET POPUP -->
+<div class="popup" id="secretPopup">
+  <div class="popup-box" style="font-size: 16px; line-height: 1.6; text-align: left; max-height: 80vh; overflow-y: auto;">
+    
+    Hiii, happy birthday!!!<br><br>
+    I hope today wraps you in the kind of warmth you deserve — the kind that makes you feel appreciated, seen, and genuinely happy.<br><br>
+    
+    As another year begins for you, I hope it brings soft mornings, peaceful nights, and days that feel lighter than the ones before. You’ve gone through so much, worked so hard, and grown in ways some people may not even notice — but it shows. And you deserve to celebrate that.<br><br>
+    
+    I hope you continue to shine in the things you’re passionate about.<br>
+    I hope your confidence grows quietly but steadily.<br>
+    And I hope you find yourself surrounded by people who bring out the best in you — people who make you laugh, support your dreams, and remind you of your worth.<br><br>
+    
+    Graduation is coming soon, and I hope this new chapter gives you opportunities that excite you, challenge you, and bring you closer to the life you’re aiming for. You’ve earned every step of progress through your effort and resilience.<br><br>
+    
+    May your birthday be gentle.<br>
+    May your heart be light.<br>
+    And may this new year of your life bring you healing, joy, and the kind of days you won’t forget.<br><br>
+    
+    <button onclick="showPopup('lovePopup'); closePopup('secretPopup')">OKAY</button>
+    <button onclick="closePopup('secretPopup')">BACK</button>
+  </div>
+</div>
+
+
+  <!-- I LOVE YOU POPUP -->
+  <div class="popup" id="lovePopup">
+    <div class="popup-box">
+    Take care, enjoy your day, and keep shining in your own beautiful way.<br>
+
+      <br>
+      <button onclick="closePopup('lovePopup')">OKAY</button>
+    </div>
+  </div>
+
+  <!-- REJECTED KISS POPUP -->
+  <div class="popup" id="rejectedPopup">
+    <div class="popup-box">
+      THANK YOU FOR EVERYTHING!!
+      <br>
+      <button onclick="closePopup('rejectedPopup')">hmp:(</button>
+    </div>
+  </div>
+
+  <script>
+    function showPopup(id) {
+      document.getElementById(id).classList.add('active');
+    }
+
+    function closePopup(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+  </script>
+</body>
+</html>
+    .song-link:hover, .popup-btn:hover {
+      background-color: #ff6f9c;
+      transform: scale(1.05);
+    }
+
+    /* POPUP STYLES */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(255, 192, 203, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 10;
+    }
+
+    .popup.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      font-size: 22px;
+      color: #222;
+    }
+
+    .popup button {
+      margin-top: 20px;
+      padding: 10px 22px;
+      font-size: 16px;
+      background-color: #ff8fab;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+
+    .popup button:hover {
+      background-color: #ff6f9c;
+    }
+
+    /* FLOATING HEARTS */
+    .heart {
+      position: absolute;
+      color: pink;
+      font-size: 20px;
+      animation: floatUp 6s infinite ease-in;
+      opacity: 0.6;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.3);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      heart.style.fontSize = (15 + Math.random() * 15) + "px";
+      heart.textContent = "💗";
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <div class="container">
     <h1>hi po sa baby ko! (yieee) 💖</h1>
 
     <div class="message-box">
